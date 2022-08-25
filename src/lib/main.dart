@@ -1,38 +1,22 @@
 import 'package:flutter/material.dart';
 
 void main() {
-  runApp(MaterialApp( home: MyApp(),));
+  runApp(MaterialApp( home: LoginApp(),));
 }
-class MyApp extends StatefulWidget{
+
+class LoginApp extends StatefulWidget{
   @override
   State<StatefulWidget> createState() {
     // TODO: implement createState
-    return MyAppState();
+    return _LoginAppState();
   }
 }
 
-// void answerQuestion(){
-//    questionIndex=questionIndex+1;
-//  print(questionIndex);
-// }
 
-void answerQuestion1(){
-  print('Log_71..');
-}
-
-
-class MyAppState extends State<MyApp>{
-
-  //var questionIndex=0;
+class _LoginAppState extends State<LoginApp>{
 
   @override
   Widget build(BuildContext context) {
-    var questionIndex=0;
-    print('Log_81...');
-    answerQuestion1();
-    var questions =['Answer question 1',
-      'Answer question 2'
-    ];
     // TODO: implement build
     return MaterialApp (
       home:Scaffold(
@@ -65,19 +49,6 @@ class MyAppState extends State<MyApp>{
             ],
           ),
         ),
-
-
-        // body: Row(
-        //   children: const [
-        //     Text("The question is ?"),
-        //     RaisedButton(
-        //         child: Text('The answer is 1'),
-        //         onPressed: null),
-        //     RaisedButton(
-        //         child: Text('The answer is 2'),
-        //         onPressed: null)
-        //   ],
-        // ),
       ),
     );
   }
