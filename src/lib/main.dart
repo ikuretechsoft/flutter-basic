@@ -26,26 +26,40 @@ class _LoginAppState extends State<LoginApp>{
         body: Center(
           child: Column(
             children:  [
-              Text("Welcome to Login Page"),
-              TextField(
-                  obscureText: true,
-                  decoration: InputDecoration(
-                    border: OutlineInputBorder(),
-                    labelText: 'Email',
-                    hintText: 'Enter email',
-                  )
+              Padding(
+                padding: const EdgeInsets.all(16.0),
+                child: Text("Welcome to Login Page" ,style: TextStyle(fontSize: 20),
+          textAlign: TextAlign.center,
+        ),
               ),
-              TextField(
-                  obscureText: true,
-                  decoration: InputDecoration(
-                    border: OutlineInputBorder(),
-                    labelText: 'Password',
-                    hintText: 'Enter Password',
-                  )
+              Padding(
+                padding: const EdgeInsets.all(16.0),
+                child: TextField(
+                    obscureText: true,
+                    decoration: InputDecoration(
+                      border: OutlineInputBorder(),
+                      labelText: 'Email',
+                      hintText: 'Enter email',
+                    )
+                ),
               ),
-              RaisedButton(
-                  child: Text('Login'),
-                  onPressed: ()=> print('Button is clicked')),
+              Padding(
+                padding: const EdgeInsets.all(16.0),
+                child: TextField(
+                    obscureText: true,
+                    decoration: InputDecoration(
+                      border: OutlineInputBorder(),
+                      labelText: 'Password',
+                      hintText: 'Enter Password',
+                    )
+                ),
+              ),
+              Padding(
+                padding: const EdgeInsets.all(16.0),
+                child: RaisedButton(
+                    child: Text('Login'),
+                    onPressed: ()=> print('Button is clicked')),
+              ),
             ],
           ),
         ),
